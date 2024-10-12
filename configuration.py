@@ -1,3 +1,4 @@
-SERVICE_URL = 'https://my-json-server.typicode.com/typicode/demo/posts'
+SERVICE_URL = "https://gorest.co.in/public/v1/users"
 # https://my-json-server.typicode.com/typicode/demo/posts
 # https://darktide.gameslantern.com/api/mission-board
+# https://gorest.co.in/public/v1/users
