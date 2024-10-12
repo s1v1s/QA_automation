@@ -11,9 +11,10 @@ class Response:
     def validate(self, schema):
         if isinstance(self.response_json, list):
             for item in self.response_json:
-                validate(item, schema)
+                schema.model_validate(item)
         else:
-            validate(item, schema)
+            schema.model_validate(self.response_json)
+        return self
 
     def assert_status_code(self, status_code):
         if isinstance(status_code, list):
