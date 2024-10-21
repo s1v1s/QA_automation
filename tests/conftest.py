@@ -1,12 +1,3 @@
-"""
-scope:
-function - (по умолчанию) повторное выполнение fixture при повторном вызове,
-session - выполнение fixture единожды и затем использование кэшированного результата в рамках всего теста
-Замысел - повышение производительности/скорости исполнения тестов за счёт исключения повторяющихся действий
-autouse:
-True - fixture будет исполняться для каждого теста без дополнительного указания
-"""
-
 from random import randrange
 from collections.abc import Callable
 import pytest
@@ -18,7 +9,8 @@ def get_number():
 
 
 def _calculate(a: int, b: int) -> int:
-    return a + b
+    if isinstance(a, int) and isinstance(b, int):
+        return a + b
 
 
 @pytest.fixture
