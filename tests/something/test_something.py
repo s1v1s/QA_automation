@@ -1,4 +1,6 @@
 import pytest
+
+from src.enums.user_enums import Statuses
 from src.generators.player_localization import PlayerLocalization
 
 
@@ -30,15 +32,8 @@ def test_calculator(first_value, second_value, result, calculate):
     assert calculate(first_value, second_value) == result
 
 
-@pytest.mark.parametrize(
-    "status",
-    [
-        "ACTIVE",
-        "BANNED",
-        "DELETED",
-        "INACTIVE",
-    ],
-)
+# Распаковка [*Statuses.list()] == Statuses.list()
+@pytest.mark.parametrize("status", Statuses.list())
 def test_player_generator_with_different_status(status, get_player_generator):
     print(get_player_generator.set_status(status).build())
 

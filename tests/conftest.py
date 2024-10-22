@@ -1,7 +1,9 @@
-from random import randrange
 from collections.abc import Callable
-from src.generators.player import Player
+from random import randrange
+
 import pytest
+
+from src.generators.player import Player
 
 
 @pytest.fixture
