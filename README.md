@@ -84,6 +84,3 @@ Skip теста по причинам в комментарие
 
 Код на основе уроков тестирования из плейлиста:
 <https://www.youtube.com/playlist?list=PLB2iiSfKWtvykq9s0plSVI_Du60i0iphU>
-
-Также стоит посмотреть:
-<https://www.youtube.com/playlist?list=PLeLN0qH0-mCVdHgdjlnKTl4jKuJgCK-4b>

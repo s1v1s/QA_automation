@@ -1,3 +1,9 @@
+import tables
+from db import session
+
+result = session.query(tables.Films.film_id).first()
+print(result)
+
 computer = {
     "id": 21,
     "status": "ACTIVE",
